@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid</title>
+</head>
+<style>
+  h1, form{
+    text-align: center;
+  }
+  
+    .one{
+        border-bottom: 60px solid red;
+        width: 0;
+	    height: 0;
+	    border-left: 50px solid transparent;
+	    border-right: 50px solid transparent;
+	    margin: auto;
+      align-content: center;
+        
+
+    }
+    .one:hover .btn{
+
+      visibility: visible;
+      	
+
+    }
+   
+    .two {
+	border-bottom: 75px solid orange;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	height: 0;
+	width: 100px;
+    margin: auto;
+    }
+    .two:hover .btn {
+        visibility: visible;
+
+    }
+    .three {
+	border-bottom: 100px solid yellow;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	height: 0;
+	width: 220px;
+    margin: auto;
+    }
+    .three:hover .btn {
+        visibility: visible;
+
+    }
+   
+    .four {
+	border-bottom: 130px solid blue;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	height: 0;
+	width: 380px;
+    margin: auto;
+    }
+    .four:hover .btn {
+        visibility: visible;
+
+    }
+    .five{
+	border-bottom: 145px solid  brown;
+	border-left: 120px solid transparent;
+	border-right: 120px solid transparent;
+    
+	height: 0;
+	width: 580px;
+    
+    margin: auto;
+    }
+    .five:hover .btn {
+        visibility: visible;
+
+    }
+    .six{
+	border-bottom: 150px solid  green;
+	border-left: 120px solid transparent;
+	border-right: 120px solid transparent;
+    
+	height: 0;
+    
+	width: 820px;
+    
+    margin: auto;
+    }
+    .six:hover .btn {
+        visibility: visible;
+
+    }
+    .btn{
+    
+      visibility: hidden;
+     
+    
+    }
+    input, button{
+        display: inline-block;
+        padding: 10px;
+    }
+    
+    </style>
+    
+<body>
+
+    
+    
+         <div id="pyramid">
+             <div class="one">
+                <div class="btn">
+                    <input id="one" type="number" value="0" max="100" min="0">
+                    <button onclick="increment()">+</button>
+                    <button onclick="decrement()">-</button>
+                </div> </div><br>
+
+                <div class="two"> <div class="btn">
+                     <input id="two" type="number" value="0" max="100" min="0">
+                     <button onclick="increment()">+</button>
+                     <button onclick="decrement()">-</button>
+                    </div></div><br>
+
+                    <div class="three"> <div class="btn">
+                        <input id="three" type="number" value="0" max="100" min="0">
+                        <button onclick="increment()">+</button>
+                        <button onclick="decrement()">-</button>
+                    </div></div>
+
+                      <div class="four"> <div class="btn">
+                          <input id="four" type="number" value="0" max="100" min="0">
+                          <button onclick="increment()">+</button>
+                          <button onclick="decrement()">-</button>
+                    </div></div>
+
+                        <div class="five"> <div class="btn">
+                             <input id="five" type="number" value="0" max="100" min="0">
+                             <button onclick="increment()">+</button>
+                             <button onclick="decrement()">-</button>
+                        </div></div>
+
+                              <div class="six"> <div class="btn">
+                                  <input id="six" type="number" value="0" max="100" min="0">
+                                  <button onclick="increment()">+</button>
+                                  <button onclick="decrement()">-</button>
+
+                                </div></div>
+        </div>
+        
+        <h1> My Food Pyramid</h1>
+        <form>
+            <label for="date">Date:</label>
+            <input type="date"  name="date">
+           
+        </form>
+            
+
+
+         <script>
+             
+              function increment() {
+                  document.getElementById('one').stepUp();
+                  document.getElementById('two').stepUp();
+                  document.getElementById('three').stepUp();
+                  document.getElementById('four').stepUp();
+                  document.getElementById('five').stepUp();
+                  document.getElementById('six').stepUp();
+                }
+            function decrement() {
+                document.getElementById('one').stepDown();
+                document.getElementById('two').stepDown();
+                document.getElementById('three').stepDown();
+                document.getElementById('four').stepDown();
+                document.getElementById('five').stepDown();
+                document.getElementById('six').stepDown();
+            }
+            
+      
+           
+         </script>
+    
+
+</body>
+</html>
