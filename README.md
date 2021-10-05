@@ -1,2 +1,3 @@
 # Project1_Pyramid
-Interactive pyramid
+An Interactive Food pyramid chart to record the number of foods consumed in a given day using HTML/CSS/JS.
+
